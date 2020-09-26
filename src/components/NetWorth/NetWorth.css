@@ -1,0 +1,14 @@
+.net-worth-container {
+	padding: 2rem;
+}
+.net-worth-number {
+	font-size: 5rem;
+}
+
+.negative {
+	color: var(--muted-red);
+}
+
+.positive {
+	color: var(--muted-green);
+}

@@ -1,0 +1,54 @@
+@import url(//fonts.googleapis.com/css?family=Ubuntu+Mono);
+@import url(//fonts.googleapis.com/css?family=Playfair+Display);
+@import url(//fonts.googleapis.com/css?family=Lato);
+
+:root {
+  /*todo: adjust these in media queries*/
+  --card-height-small: 12rem;
+  --card-width-small: 12rem;
+  --card-height-medium: 19rem;
+  --card-width-medium: 24.6rem;
+  --card-width-large: 75.5rem;
+  --card-height-medium-large: 31rem;
+  --card-width-medium-large: 45.8rem;
+  --card-height-large: 38.7rem;
+  --widget-background-color: #353535;
+  --muted-blue: #94c8e2;
+  --muted-purple: #9672bd;
+  --muted-green: #528452;
+  --muted-red: #a94e40;
+  --muted-teal: #3e847d;
+  --dark-gray: #7b7a7a;
+  --muted-pink: #ffab9e;
+  --leaf-green-hp: #70f8a8;
+  --leaf-green-hp-label: #f8b040;
+  --muted-dark-blue: #516fa7;
+  --muted-violet: #e92abaa8;
+}
+
+@media screen and (max-width: 1370px) {
+  :root {
+    --card-width-medium: 23.3rem;
+    --card-width-large: 72.5rem;
+  }
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100%;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+
+html {
+  height: 100%;
+  --page-background-color: #424242;
+  background-color: var(--page-background-color);
+}

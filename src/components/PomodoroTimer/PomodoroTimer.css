@@ -1,0 +1,40 @@
+.timer-container {
+	background-color: var(--muted-red);
+	height: 100%;
+	border-radius: 20px;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+
+}
+
+.timer {
+	font-family: "Lato", sans-serif;
+	font-size: 7rem;
+	font-weight: 100;
+	text-align: center;
+}
+
+.break {
+	background-color: var(--muted-purple);
+}
+
+.timer-button-container {
+	text-align: center;
+	display: flex;
+	justify-content: center;
+
+	font-size: 1rem;
+	cursor: pointer;
+}
+
+.timer-button {
+	margin-top: 2rem;
+	width: 4rem;
+	padding: 1rem 2rem;
+
+	border-radius: 7px;
+	background-color: var(--dark-gray);
+}

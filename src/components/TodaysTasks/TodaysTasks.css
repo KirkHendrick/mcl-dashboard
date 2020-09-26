@@ -1,0 +1,46 @@
+.todays-task-groups-container {
+	display: flex;
+	flex-wrap: wrap;
+
+	padding-left: 1rem;
+	padding-top: 1rem;
+}
+
+.task-today-group {
+	max-width: 20rem;
+	margin-right: 2rem;
+}
+
+.task-today-group-name {
+	color: var(--muted-blue);
+	margin-bottom: 0.3rem;
+}
+
+.task-today-category {
+	color: var(--muted-purple);
+	padding-left: 1rem;
+}
+
+.task-today {
+	margin-bottom: 1rem;
+	padding-left: 1rem;
+	cursor: pointer;
+}
+
+.task-today:hover {
+	font-weight: bold;
+}
+
+.done-header {
+	color: var(--muted-green);
+	margin-bottom: 0.3rem;
+}
+
+.done-task {
+	text-decoration: line-through;
+	font-style: italic;
+	color: var(--dark-gray);
+
+	margin-bottom: 1rem;
+	padding-left: 1rem;
+}

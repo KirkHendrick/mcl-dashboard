@@ -1,0 +1,9 @@
+.single-number {
+	font-size: 5rem;
+}
+
+.container {
+	display: flex;
+	align-content: center;
+	width: 100%;
+}

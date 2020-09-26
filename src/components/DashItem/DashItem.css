@@ -1,0 +1,166 @@
+.dash-item {
+	margin-bottom: .7rem;
+	margin-right: .7rem;
+
+	background-color: var(--widget-background-color);
+	color: white;
+
+	border-radius: 5px;
+	width: 100%;
+	height: 100%;
+}
+
+.rounded {
+	border-radius: 20px;
+}
+
+.shadow {
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 1);
+}
+
+.card-container {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+
+.card-header {
+	max-height: 1.2rem;
+	padding: 1rem;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+
+	display: flex;
+	justify-content: space-between;
+}
+
+.card-footer {
+	padding: 20px;
+	border-top: 1px solid rgba(0, 0, 0, 0.3);
+
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: space-between;
+}
+
+.card-controls {
+	cursor: pointer;
+}
+
+.selected-control {
+	font-weight: bold;
+}
+
+.card-controls:hover {
+	font-weight: bold;
+}
+
+.card-body {
+	height: 100%;
+	overflow: auto;
+}
+
+.expand-icon {
+	transform: scale(0.7);
+	cursor: pointer;
+}
+
+.expand-icon:hover {
+	transform: scale(0.9);
+}
+
+@keyframes expand-large {
+	0% {
+	}
+	100% {
+		width: var(--card-width-large);
+	}
+}
+
+@keyframes expand-medium-large {
+	0% {
+	}
+	100% {
+		width: var(--card-width-medium-large);
+	}
+}
+
+@keyframes contract-medium-large {
+	0% {
+	}
+	100% {
+		width: var(--card-width-medium-large);
+	}
+}
+
+@keyframes contract-medium {
+	0% {
+	}
+	100% {
+		width: var(--card-width-medium);
+	}
+}
+
+@keyframes contract-small {
+	0% {
+	}
+	100% {
+		width: var(--card-width-small);
+	}
+}
+
+.expanded {
+	max-height: 1000px;
+	transition: max-height .4s ease-in;
+	animation-duration: .3s;
+	animation-timing-function: ease-in;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+
+.expanded-medium-large {
+	animation-name: expand-medium-large;
+	width: var(--card-width-medium-large);
+	height: var(--card-height-medium-large);
+}
+
+.expanded-large {
+	animation-name: expand-large;
+	width: var(--card-width-large);
+	height: var(--card-height-large);
+}
+
+.contracted {
+	transition: max-height 40s ease-in;
+	animation-duration: .3s;
+	animation-timing-function: ease-in;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+
+.contracted-small {
+	animation-name: contract-small;
+	max-height: var(--card-height-small);
+	height: var(--card-height-small);
+}
+
+.contracted-medium {
+	animation-name: contract-medium;
+	max-height: var(--card-height-medium);
+	height: var(--card-height-medium);
+}
+
+.contracted-medium-large {
+	animation-name: contract-medium-large;
+	max-height: var(--card-height-medium-large);
+	height: var(--card-height-medium-large);
+}
+
+.overlay {
+	z-index: 1000;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.9);
+}

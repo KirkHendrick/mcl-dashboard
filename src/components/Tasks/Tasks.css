@@ -1,0 +1,15 @@
+.generic-tasks-container {
+	padding-top: 1rem;
+	padding-left: 2rem;
+	padding-right: 2rem;
+}
+
+.task {
+	padding-bottom: .5rem;
+	font-family: "Ubuntu Mono", sans-serif;
+}
+
+.task-heading {
+	color: var(--muted-blue);
+	padding-bottom: 1rem;
+}

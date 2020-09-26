@@ -1,0 +1,21 @@
+.chart-container {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	padding-top: 10px;
+}
+
+.chart-item {
+	height: 100%;
+	width: 100%;
+}
+
+.chart-expanded-large {
+	height: var(--card-height-large);
+	width: var(--card-width-large);
+}
+
+.chart-contracted-medium-large {
+	height: var(--card-height-medium-large);
+	width: var(--card-width-medium-large);
+}

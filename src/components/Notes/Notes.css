@@ -1,0 +1,19 @@
+.generic-notes-container {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.note {
+	padding: 1rem 1rem 1rem 2rem;
+
+	font-family: "Ubuntu Mono", sans-serif;
+}
+
+.note-heading {
+	color: var(--muted-blue);
+	padding-bottom: 1rem;
+}
+
+.note-line {
+	padding-bottom: .25rem;
+}
